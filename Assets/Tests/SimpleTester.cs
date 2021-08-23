@@ -22,4 +22,17 @@ class SimpleTester
     {
         Assert.AreEqual(2, 1 + 1);
     }    
+
+    [Test]
+    public void TestTwoEqualsThreeShouldFail()
+    {
+        // Arrange
+        int expectedResult = 2;
+    
+        // Act
+        int result = 1 + 2; // 3 !!!
+    
+        // Assert
+        Assert.AreEqual(result, expectedResult);
+    }
 } 
